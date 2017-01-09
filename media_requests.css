@@ -1,0 +1,438 @@
+
+@media (min-width: 1400px) {
+.subnav_bg {
+	background-image: url(Subnav_bg.png);
+	height: 65px;
+	z-index: 999;
+	margin-top: 65px!important;
+}
+/*.more_btn {
+	cursor: pointer;
+	padding-right: 25px!important;
+	float: right;
+}*/
+.tabs {
+	padding-left: 25px;
+	float: left;
+	background-image: url(Tabs_tools.png)!important;
+	width: 569px!important;
+	height: 65px;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+}
+.info {
+	position: absolute;
+	top: 80px!important;
+	left: 15px;
+}
+.logo {
+	float: left;
+	margin: 0;
+	vertical-align: middle;
+}
+.logo img {
+	width: 115px;
+	height: auto;
+	vertical-align: middle;
+}
+.avatar {
+	background-color: #333333;
+	background-image: url(avatar_65.svg)!important;
+	width: 115px;
+	height: 65px!important;
+	float: right;
+	margin: 0 20px 0 0;
+}
+.main_image {
+	margin-top: 65px;
+	cursor: pointer;
+	max-height: inherit;
+}
+.light_top_gradient {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	top: 65px;
+	left: 0;
+}
+.star {
+	position: absolute;
+	top: 78px;
+	right: 15px;
+	cursor: pointer;
+	height: 40px;
+	width: 136px;
+}
+.map_controls {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background-image: url(map_controls.png);
+	cursor: pointer;
+	width: 248px;
+	height: 73px;
+}
+.om {
+	float: left;
+	background-image: url(om_button.png);
+	width: 433px!important;
+	height: 36px;
+	margin: 13px 0 0 15px;
+	cursor: pointer;
+}
+.right_container {
+	padding: 0 0 0 15px;
+	margin-top: 145px!important;
+}
+h1 {
+	font-size: 2.2em!important;
+	line-height: 15px;
+	letter-spacing: 0.25;
+}
+.proposed_terms {
+	background-color: #ffffff;
+	margin: 10px 0px 0 20px!important;
+	padding: 0;
+	font-weight: 600;
+	font-size: 16px;
+}
+.cushion {
+	height: 500px!important;
+	border-right: 0px;
+}
+.broker_logo_1 {
+	display: block!important;
+}
+.broker_logo_2 {
+	display: block!important;
+}
+}
+
+@media (max-width: 1200px) {
+.tabs {
+	padding-left: 25px;
+	float: left;
+	background-image: url(Tabs.png)!important;
+	width: 318px!important;
+	height: 65px;
+	background-repeat: no-repeat;
+	margin-left: 0px;
+}
+}
+
+@media (min-width: 992px) {
+.subnav_bg {
+	background-image: url(Subnav_bg.png);
+	height: 65px;
+	margin-top: 55px;
+	z-index: 999;
+	width: inherit;
+	position: fixed;
+}
+.change_position {
+	position: fixed;
+}
+.sticky_left {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0;
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	display: block!important;
+}
+/*.more_btn {
+	cursor: pointer;
+	padding-right: 25px!important;
+	float: right;
+}*/
+.info {
+	position: absolute;
+	top: 70px;
+	left: 15px;
+}
+.tabs {
+	padding-left: 25px;
+	float: left;
+	background-image: url(Tabs.png);
+	width: 318px;
+	height: 65px;
+	background-repeat: no-repeat;
+	margin-left: 0px;
+}
+.terms_broker_container {
+	padding: 0 0 0 15px;
+}
+.logo {
+	float: left;
+	margin: 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.logo img {
+	width: 115px;
+	height: auto;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+.avatar {
+	background-color: #333333;
+	background-image: url(avatar_65.svg);
+	width: 111px;
+	float: right;
+	margin: 0 20px 0 0;
+}
+.main_image {
+	margin-top: 55px;
+	cursor: pointer;
+}
+.right_container {
+	padding: 0 10px 0 15px;
+	margin-top: 135px;
+}
+h1 {
+	font-size: 1.8em!important;
+	line-height: 15px;
+	letter-spacing: 0.25;
+}
+.sub_menu {
+	background-image: url(Subnav_bg.png);
+	border-right: 1px solid #e3e3e3!important;
+	width: 100%;
+	height: 65px;
+	clear: both;
+}
+.sub_menu_wrapper {
+	border-right: 1px solid #e3e3e3!important;
+	margin-right: 0px;
+}
+.proposed_terms {
+	background-color: #ffffff;
+	margin: 20px 0px 0 0px;
+	padding: 0;
+	font-weight: 600;
+	font-size: 16px;
+}
+.cushion {
+	height: 500px!important;
+	border-right: 1px solid #e3e3e3!important;
+}
+.links {
+	list-style-type: none;
+	overflow: hidden;
+	margin-left: 15px;
+}
+.links>li {
+	float: left;
+	padding-right: 40px;
+}
+.links>li>a {
+	display: block;
+	color: #333333;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 0.25;
+	font-size: 14px;
+	text-decoration: none;
+	height: 65px;
+	padding-top: 22px;
+}
+.links>li>a:hover {
+	display: block;
+	border-bottom: 2px solid #D9D9D9;
+	padding-top: 22px;
+}
+.active {
+	border-bottom: 2px solid #9C9C9C!important;
+}
+}
+
+@media (min-width: 768px) {
+.subnav_bg {
+	background-image: url(Subnav_bg.png);
+	height: 65px;
+	z-index: 999;
+}
+.sticky_left {
+	display: none;
+}
+.more_btn {
+	cursor: pointer;
+	padding-right: 15px;
+	float: right;
+}
+.info {
+	position: absolute;
+	top: 70px;
+	left: 15px;
+}
+.main_image {
+	margin-top: 55px;
+	cursor: pointer;
+}
+.logo {
+	float: left;
+	margin: 0;
+	vertical-align: middle;
+}
+.logo img {
+	width: 115px;
+	height: auto;
+	vertical-align: middle;
+}
+.avatar {
+	background-color: #333333;
+	background-image: url(avatar_65.svg);
+	width: 137px;
+	height: 55px;
+	float: right;
+	margin: 0 20px 0 0;
+}
+.tabs {
+	padding-left: 15px;
+	float: left;
+	background-image: url(Tabs_tools.png);
+	width: 476px;
+	height: 65px;
+	background-repeat: no-repeat;
+	margin-left: 30px;
+}
+h1 {
+	font-size: 2.0em;
+	line-height: 15px;
+	letter-spacing: 0.25;
+}
+.sub_menu {
+	background-image: url(Subnav_bg.png);
+	border-right: 0px solid #e3e3e3;
+	width: 100%;
+	height: 65px;
+	clear: both;
+}
+.sub_menu_wrapper {
+	border-right: 0px solid #e3e3e3;
+	margin-right: 0px;
+}
+.cushion {
+	height: 10px;
+	border-right: 0px;
+}
+.broker_logo_1 {
+	display: none;
+}
+.broker_logo_2 {
+	display: none;
+}
+}
+
+@media (max-width: 767px) {
+.subnav_bg {
+	background-image: url(Subnav_bg.png);
+	height: 65px;
+	z-index: 999;
+}
+.star {
+	position: absolute;
+	top: 12px;
+	right: 15px;
+	cursor: pointer;
+	height: 40px;
+	width: 136px;
+}
+.info {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	cursor: pointer;
+	background-image: url(request_info.png);
+	background-repeat: no-repeat;
+	width: 325px;
+	height: 36px;
+}
+.light_top_gradient {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+.sticky_left {
+	display: none;
+}
+/*.more_btn {
+	cursor: pointer;
+	padding-right: 15px;
+	float: right;
+}*/
+.tabs {
+	padding-left: 15px;
+	float: left;
+	background-image: url(Tabs.png);
+	width: 318px;
+	height: 65px;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+}
+.main_image {
+	margin-top: 55px;
+	cursor: pointer;
+}
+.logo {
+	width: 100%;
+	float: left;
+	margin: 0 0 0 18px;
+}
+.avatar {
+	background-color: #333333;
+	background-image: url(avatar_55.png);
+	width: 115px;
+	height: 55px;
+	float: right;
+	margin: 0 20px 0 0;
+}
+.om {
+	float: left;
+	background-image: url(om_button.png);
+	width: 242px;
+	height: 36px;
+	margin: 13px 0 0 15px;
+	cursor: pointer;
+}
+h1 {
+	font-size: 1.8em;
+	line-height: 15px;
+	letter-spacing: 0.25;
+}
+.sub_menu {
+	background-image: url(Subnav_bg.png);
+	border-right: 0px solid #e3e3e3;
+	width: 100%;
+	height: 65px;
+	clear: both;
+}
+.sub_menu_wrapper {
+	border-right: 0px solid #e3e3e3;
+	margin-right: 0px;
+}
+.cushion {
+	height: 10px;
+	border-right: 0px;
+}
+.proposed_terms {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 10px 0 0 0;
+	font-weight: 600;
+	font-size: 16px;
+	clear: both;
+}
+.broker_logo_1 {
+	display: none;
+}
+.broker_logo_2 {
+	display: none;
+}
+}

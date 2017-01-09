@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<![endif]-->
+<head lang="en">
+<title>Property Page</title>
+<!-- compiled CSS -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="default.css" />
+<link rel="stylesheet" type="text/css" href="media_requests.css" />
+<script type="text/javascript" src="Main.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row navbar navbar-fixed-top top">
+    <div class="col-sm-6 col-xs-6"><div class="logo"><img src="CREXi-logo-white.svg"/></div></div>
+    <div class="col-sm-6 col-xs-6 avatar"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-7 col-lg-6 change_position">
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0;">
+          <div><img class="img-responsive main_image" src="Good_image.jpg" id="imgClickAndChange" onclick="changeImage()"/>
+            <div id="map" style="display: none;"></div>
+          </div>
+          <!--<div class="light_top_gradient"></div>-->
+          <div class="dark_bottom_gradient" id="darkGradient"></div>
+          <div class="info">
+          	<div style="float: right; margin-right: 15px;  width: 167px; font-weight: 500;">
+            <div class="request_info">
+              <div style="width:127px; margin: auto;">
+                <span class="fa fa-info-circle" style="font-size: 16px; padding-right: 10px;"></span>
+                <div style="float: right;">REQUEST INFO</div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div><img class="star" src="grey_star.svg" id="starClickandChange" onclick="changeStar()"/></div>
+          <div><img class="red_label" src="label.svg" width="116px" height="23px" id="label"></div>
+          <div class="left property_title color_white">
+            <h1 id="title">Starbucks</h1>
+			  <p id="description">110 Frances Lane, Orland, CA 95963</p>
+            
+          </div>
+          <div class="right map_controls" id="mapClickandChange" onclick="changeMap()"></div>
+        </div>
+        <div class="sub_menu">
+          <div style="float: left; margin-top: 13px; margin-left: 15px;  width: 100px; font-weight: 500;">
+            <div class="download_om">
+              <div style="width:48px; margin: auto;">
+                <span class="fa fa-download" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
+                <div style="float: right;">OM</div>
+              </div>
+            </div>
+          </div>
+          <div style="float: left; margin-top: 13px; margin-left: 15px;  width: 180px; font-weight: 500;">
+            <div class="download_dd">
+              <div style="width:138px; margin: auto;">
+                <span class="fa fa-folder-open" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
+                <div style="float: right;">DUE DILIGENCE</div>
+              </div>
+            </div>
+          </div>
+          <div style="float: right; margin-top: 13px; margin-right: 15px;  width: 187px; font-weight: 500;">
+            <div class="button_submit_loi">
+              <div style="width:107px; margin: auto;">
+                <span class="fa fa-pencil-square-o" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
+                <div style="float: right;">SUBMIT LOI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 terms_broker_container">
+          <div class="row sub_menu_wrapper">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="listing_brokers">
+                <h3>Listing Brokers</h3>
+                <div>
+                  <div>
+                    <div style="background-image: url(Broker.png); width: 176px; height: 47px; float: left; margin-bottom: 15px;"></div>
+                    <div class="broker_logo_1" style="float: right; background-image: url(broker_logo.png); width: 125px; height: 29px; margin-top: 10px;"></div>
+                  </div>
+                  <div class="clear" style="border-top: 1px solid #ededed; padding: 10px 0 0 0; display: none;" id="broker">
+                    <div style="background-image: url(Broker2.png); width: 176px; height: 47px; float: left;"></div>
+                    <div class="broker_logo_2" style="float: right; background-image: url(broker_logo.png); width: 125px; height: 29px; margin-top: 10px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="proposed_terms">
+                <h3 id="terms">Proposed Terms</h3>
+                <div>
+                  <div class="proposed_terms_wrapper">
+                    <div class="proposed_terms_item_left proposed_terms_dot_position">Asking Price</div>
+                    <div class="proposed_terms_item_right proposed_terms_dot_position">$22,000,000</div>
+                    <div class="proposed_terms_dotted_line"></div>
+                  </div>
+                  <div style="display: none;" class="proposed_terms_wrapper" id="dd">
+                    <div class="proposed_terms_item_left proposed_terms_dot_position">Due Diligence</div>
+                    <div class="proposed_terms_item_right proposed_terms_dot_position">Up to 60 Days</div>
+                    <div class="proposed_terms_dotted_line"></div>
+                  </div>
+                  <div style="display: none;" class="proposed_terms_wrapper" id="escrow">
+                    <div class="proposed_terms_item_left proposed_terms_dot_position">Closing Period</div>
+                    <div class="proposed_terms_item_right proposed_terms_dot_position">Up to 30 Days</div>
+                    <div class="proposed_terms_dotted_line"></div>
+                  </div>
+                  <div style="display: none;" class="proposed_terms_wrapper" id="emd">
+                    <div class="proposed_terms_item_left proposed_terms_dot_position">Earnest Deposit</div>
+                    <div class="proposed_terms_item_right proposed_terms_dot_position">$2,200,000 / 10%</div>
+                    <div class="proposed_terms_dotted_line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear cushion"></div>
+      </div>
+    </div>
+    <div class="row sticky_left">
+      <div class="col-sm-6 col-md-7 col-lg-6">
+        <div class="row left_grey">
+          <div class="col-sm-6 bottom_links"><a href="#"><span class="fa fa-th" style="padding-right: 10px;"></span>BACK TO RESULTS</a></div>
+          <div class="col-sm-6 bottom_links"><span class="right"><a href="#">100 SIMILAR PROPERTIES</a></span></div>
+          
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-6"></div>
+    </div>
+    <div class="col-md-5 col-lg-6 col-md-offset-7 col-lg-offset-6">
+      <div class="row subnav_bg">
+        <div>
+        	<ul class="links">
+        		<li><a class="active" href="#"><span  class="fa fa-building" style="font-size: 16px; padding-right: 7px;"></span>PROPERTY DETAILS</a></li>
+        		<li><a href="#"><span class="fa fa-folder-open" style="font-size: 16px; padding-right: 7px;"></span>DUE DILIGENCE</a></li>
+        		<li><a href="#"><span class="fa fa-wrench" style="font-size: 16px; padding-right: 7px;"></span>BUYER TOOLS</a></li>
+        		
+        	</ul>
+        </div>
+        <div></div>
+      </div>
+      <div class="right_container">
+        <h3>Property</h3>
+        <div class="row" style="padding-top: 10px;">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Asking Price</div>
+              <div class="item_right dot_position">$22,000,000</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Propert Type</div>
+              <div class="item_right dot_position">Retail</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Lease Type</div>
+              <div class="item_right dot_position">Absolute NNN</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Tenant Credit Profile</div>
+              <div class="item_right dot_position">Credit Rated</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Tenancy</div>
+              <div class="item_right dot_position">Single</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Lease Term</div>
+              <div class="item_right dot_position">20 Years</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Lease Commencement</div>
+              <div class="item_right dot_position">04/01/2003</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Lease Expiration</div>
+              <div class="item_right dot_position">03/01/2023</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Remaining Term</div>
+              <div class="item_right dot_position">6.3 Years</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Square Footage</div>
+              <div class="item_right dot_position">111,238</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Price/SF</div>
+              <div class="item_right dot_position">$173.46</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Cap Rate</div>
+              <div class="item_right dot_position">5%</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">NOI</div>
+              <div class="item_right dot_position">$1,100,000</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Year Build</div>
+              <div class="item_right dot_position">1998</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Year Reanovated</div>
+              <div class="item_right dot_position">2003</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="item_wrapper">
+              <div class="item_left dot_position">Lot Size (Acres)</div>
+              <div class="item_right dot_position">7.67</div>
+              <div class="dotted_line"></div>
+            </div>
+          </div>
+        </div>
+        <h3>Marketing Description</h3>
+        <p>Texas Health Emergency Room: A joint venture between Texas Health, the largest health care system in North Texas, and Adeptus Health, the nation's leading operator of freestanding emergency rooms that gives more choices when it comes to quality, convenient emergency care closer to home. Strategically located within communities for optimal access, Adeptus operates more than 30 emergency rooms in Dallas, Denton, Tarrant, and Collin counties. Each equipped with a full radiology suite, including CT scanner, digital X-­ray and ultrasound. The ERs also have on-­site laboratory capabilities and are staffed with board-­certified physicians and emergency-­trained registered nurses. So unlike urgent care centers, they can provide care for true medical emergencies 24/7.</p>
+        <p>Located at the hard corner of West Centerville Road and Northwest Highway (both six-lane thoroughfares), the subject property features easy access and excellent visibility to combined daily traffic counts in excess of 72,000 vehicles per day with direct access to Interstate 635 (210,800+ vehicles per day). A four-way signalized intersection enhances this exposure. The site is centrally located in a strong retail trade area with numerous national major retailers surrounding the site including a Super Walmart, Office Depot, Ross, Big Lots, Aldi, LA Fitness, IHOP, Applebee's, Golden Corral, and many more. Numerous schools are within a five-mile radius of the site including O'Banion Middle School (1,070+ students), Remington College Dallas Campus (900+ students), South Garland High School (2,330+ students), and many more. The site features strong demographics with over 336,900 people residing within a five-mile radius. </p>
+        <h3>Investment Highlights</h3>
+        <ul>
+          <li>Brand New Construction - 20-Year Absolute Net Ground Lease (Zero Landlord Responsibilities) Featuring 2% Annual Rent Increases - Corporate Guaranteed by the Primary First Choice Corporate Entity under Adeptus Health (NYSE: ADPT) with Annual Revenues Exceeding $364 Million</li>
+          <li>Strong Retail Trade Area</li>
+          <li>Centrally Located with Strong Demographics - Features Over 336,900 People Residing Within a 5-Mile Radius  - Roughly 10 Miles North East from Central Dallas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX4Hv_J3XpP7ELRcOzWIkOb0jmDNL50DA&callback=initMap"></script> 
+</body>
+</html>
