@@ -6,7 +6,7 @@ function changeImage() {
 	if (img_el.src.match("Good_image.jpg")) {
 		document.getElementById("imgClickAndChange").src = "Bad_image.jpg";
 		document.getElementById("title").innerHTML = "5800-5808 South Central Avenue";
-		document.getElementById("description").innerHTML = "5800-5808 South Central Avenue, Los Angeles, CA 90011";
+		document.getElementById("description").innerHTML = "6.0% CAP | 84,142 SF | FL, ID, KY, LA, SC, & TX";
 		document.getElementById("terms").innerHTML = "Best & Final";
 		document.getElementById("dd").style.display = "block";
 		document.getElementById("escrow").style.display = "block";
@@ -16,7 +16,7 @@ function changeImage() {
 	} else {
 		document.getElementById("imgClickAndChange").src = "Good_image.jpg";
 		document.getElementById("title").innerHTML = "Starbucks";
-		document.getElementById("description").innerHTML = "110 Frances Lane, Orland, CA 95963";
+		document.getElementById("description").innerHTML = "7.45% CAP | 80,839 SF | Palm Beach Gardens, FL";
 		document.getElementById("terms").innerHTML = "Proposed Terms";
 		document.getElementById("dd").style.display = "none";
 		document.getElementById("escrow").style.display = "none";
