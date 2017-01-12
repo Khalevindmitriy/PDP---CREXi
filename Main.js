@@ -16,7 +16,7 @@ function changeImage() {
 	} else {
 		document.getElementById("imgClickAndChange").src = "Good_image.jpg";
 		document.getElementById("title").innerHTML = "Starbucks";
-		document.getElementById("description").innerHTML = "7.45% CAP | 80,839 SF | Palm Beach Gardens, FL";
+		document.getElementById("description").innerHTML = "6.0% CAP | 84,142 SF | FL, ID, KY, LA, SC, & TX";
 		document.getElementById("terms").innerHTML = "Proposed Terms";
 		document.getElementById("dd").style.display = "none";
 		document.getElementById("escrow").style.display = "none";
@@ -54,7 +54,7 @@ function changeMap() {
 		document.getElementById('map').style.display = "none";
 		document.getElementById("imgClickAndChange").src = "Good_image.jpg";
 		document.getElementById("title").innerHTML = "Starbucks";
-		document.getElementById("description").innerHTML = "7.45% CAP | 80,839 SF | Palm Beach Gardens, FL";
+		document.getElementById("description").innerHTML = "6.0% CAP | 84,142 SF | FL, ID, KY, LA, SC, & TX";
 		document.getElementById("dd").style.display = "none";
 		document.getElementById("escrow").style.display = "none";
 		document.getElementById("emd").style.display = "none";
