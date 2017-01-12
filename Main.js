@@ -54,7 +54,7 @@ function changeMap() {
 		document.getElementById('map').style.display = "none";
 		document.getElementById("imgClickAndChange").src = "Good_image.jpg";
 		document.getElementById("title").innerHTML = "Starbucks";
-		document.getElementById("description").innerHTML = "110 Frances Lane, Orland, CA 95963";
+		document.getElementById("description").innerHTML = "7.45% CAP | 80,839 SF | Palm Beach Gardens, FL";
 		document.getElementById("dd").style.display = "none";
 		document.getElementById("escrow").style.display = "none";
 		document.getElementById("emd").style.display = "none";
