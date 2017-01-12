@@ -6,7 +6,7 @@ function changeImage() {
 	if (img_el.src.match("Good_image.jpg")) {
 		document.getElementById("imgClickAndChange").src = "Bad_image.jpg";
 		document.getElementById("title").innerHTML = "5800-5808 South Central Avenue";
-		document.getElementById("description").innerHTML = "6.0% CAP | 84,142 SF | FL, ID, KY, LA, SC, & TX";
+		document.getElementById("description").innerHTML = "7.45% CAP | 80,839 SF | Palm Beach Gardens, FL";
 		document.getElementById("terms").innerHTML = "Best & Final";
 		document.getElementById("dd").style.display = "block";
 		document.getElementById("escrow").style.display = "block";
