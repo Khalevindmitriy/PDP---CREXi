@@ -242,7 +242,7 @@ span {
 }
 
 .download_dd:hover {
-	background-color: #272727;
+	background-color: #000000;
 }
 .request_info {
 	/*adjust the roundness*/
@@ -256,15 +256,15 @@ span {
 	font-size: 14px;
 	line-height: 36px;
 	color: #333333;
-	background-color: rgba(255,255,255,0.90);
+	background-color: rgba(255,255,255,1.00);
 	cursor: pointer;
 	margin-bottom: 12px;
 	align-content: center;
-	border: 1px #ffffff solid;
+	border: 1px #333333 solid;
 }
 
 .request_info:hover {
-	background-color: rgba(255,255,255,0.80);
+	background-color: #E9E9E9;
 }
 /*Dots*/
 .item_wrapper {
