@@ -9,8 +9,20 @@
 <link rel="stylesheet" href="font-awesome.css">
 <link rel="stylesheet" href="font-awesome.min.css">
 <link rel="stylesheet" href="font-awesome.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="Accordion.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion({
+     active: false,
+            autoHeight: true,
+            navigation: true,
+            collapsible: true
+    });
+  } );
+  </script>
 <link rel="stylesheet" type="text/css" href="default.css" />
 <link rel="stylesheet" type="text/css" href="media_requests.css" />
 <script type="text/javascript" src="Main.js"></script>
@@ -18,7 +30,9 @@
 <body>
 <div class="container-fluid">
   <div class="row navbar navbar-fixed-top top">
-    <div class="col-sm-6 col-xs-6"><div class="logo"><img src="CREXi-logo-white.svg"/></div></div>
+    <div class="col-sm-6 col-xs-6">
+      <div class="logo"><img src="CREXi-logo-white.svg"/></div>
+    </div>
     <div class="col-sm-6 col-xs-6 avatar"></div>
   </div>
   <div class="row">
@@ -31,45 +45,40 @@
           <!--<div class="light_top_gradient"></div>-->
           <div class="dark_bottom_gradient" id="darkGradient"></div>
           <div class="info">
-          	<div style="float: right; margin-right: 15px;  width: 167px; font-weight: 500;">
-            <div class="request_info">
-              <div style="width:127px; margin: auto;">
-                <span class="fa fa-info-circle" style="font-size: 16px; padding-right: 10px;"></span>
-                <div style="float: right;">REQUEST INFO</div>
+            <div style="float: right; margin-right: 15px;  width: 167px; font-weight: 500;">
+              <div class="request_info">
+                <div style="width:127px; margin: auto;"> <span class="fa fa-info-circle" style="font-size: 16px; padding-right: 10px;"></span>
+                  <div style="float: right;">REQUEST INFO</div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
           <div><img class="star" src="grey_star.svg" id="starClickandChange" onclick="changeStar()"/></div>
           <div><img class="red_label" src="label.svg" width="116px" height="23px" id="label"></div>
           <div class="left property_title color_white">
             <h1 id="title">Starbucks</h1>
-			  <p id="description">6.0% CAP | 84,142 SF | FL, ID, KY, LA, SC, & TX</p>
-            
+            <p id="description">6.0% CAP | 84,142 SF | FL, ID, KY, LA, SC, & TX</p>
           </div>
           <div class="right map_controls" id="mapClickandChange" onclick="changeMap()"></div>
         </div>
         <div class="sub_menu">
           <div style="float: left; margin-top: 13px; margin-left: 15px;  width: 100px; font-weight: 500;">
             <div class="download_om">
-              <div style="width:48px; margin: auto;">
-                <span class="fa fa-download" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
+              <div style="width:48px; margin: auto;"> <span class="fa fa-download" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
                 <div style="float: right;">OM</div>
               </div>
             </div>
           </div>
           <div style="float: left; margin-top: 13px; margin-left: 15px;  width: 180px; font-weight: 500;">
             <div class="download_dd">
-              <div style="width:138px; margin: auto;">
-                <span class="fa fa-folder-open" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
+              <div style="width:138px; margin: auto;"> <span class="fa fa-folder-open" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
                 <div style="float: right;">DUE DILIGENCE</div>
               </div>
             </div>
           </div>
           <div style="float: right; margin-top: 13px; margin-right: 15px;  width: 187px; font-weight: 500;">
             <div class="button_submit_loi">
-              <div style="width:107px; margin: auto;">
-                <span class="fa fa-pencil-square-o" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
+              <div style="width:107px; margin: auto;"> <span class="fa fa-pencil-square-o" style="font-size: 16px; padding-top: 10px; padding-right: 10px;"></span>
                 <div style="float: right;">SUBMIT LOI</div>
               </div>
             </div>
@@ -129,7 +138,6 @@
         <div class="row left_grey">
           <div class="col-sm-6 bottom_links"><a href="#"><span class="fa fa-th" style="padding-right: 10px;"></span>BACK TO RESULTS</a></div>
           <div class="col-sm-6 bottom_links"><span class="right"><a href="#">100 SIMILAR PROPERTIES</a></span></div>
-          
         </div>
       </div>
       <div class="col-sm-6 col-md-5 col-lg-6"></div>
@@ -137,16 +145,75 @@
     <div class="col-md-5 col-lg-6 col-md-offset-7 col-lg-offset-6">
       <div class="row subnav_bg">
         <div>
-        	<ul class="links">
-        		<li><a class="active" href="#"><span  class="fa fa-building" style="font-size: 16px; padding-right: 7px;"></span>PROPERTY DETAILS</a></li>
-        		<li><a href="#"><span class="fa fa-folder-open" style="font-size: 16px; padding-right: 7px;"></span>DUE DILIGENCE</a></li>
-        		<li><a href="#"><span class="fa fa-wrench" style="font-size: 16px; padding-right: 7px;"></span>BUYER TOOLS</a></li>
-        		
-        	</ul>
+          <ul class="links">
+            <li><a class="active" href="#"><span  class="fa fa-building" style="font-size: 16px; padding-right: 7px;"></span>PROPERTY DETAILS</a></li>
+            <li><a href="#"><span class="fa fa-folder-open" style="font-size: 16px; padding-right: 7px;"></span>DUE DILIGENCE</a></li>
+           <!-- <li><a href="#"><span class="fa fa-wrench" style="font-size: 16px; padding-right: 7px;"></span>BUYER TOOLS</a></li>-->
+          </ul>
         </div>
         <div></div>
       </div>
       <div class="right_container">
+        <div id="accordion">
+          <h3>Address (10 Locations)<span style="float: right;">Show All</span></h3>
+          <div>
+            <div class="row" style="padding-top: 15px;">
+              <div class="col-sm-12">
+                <div class="item_wrapper">
+                  <div class="item_left dot_position">881 North State Road 21, Melrose, FL 32666</div>
+                  <div class="item_right dot_position"><a href="#">Show on Map</a></div>
+                  <div class="dotted_line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="item_wrapper">
+                  <div class="item_left dot_position">3955 North Highway 1, Cocoa, FL 32926</div>
+                  <div class="item_right dot_position"><a href="#">Show on Map</a></div>
+                  <div class="dotted_line"></div>
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-sm-12">
+                <div class="item_wrapper">
+                  <div class="item_left dot_position">6850 Crestway Drive, San Antonio, TX 78239</div>
+                  <div class="item_right dot_position"><a href="#">Show on Map</a></div>
+                  <div class="dotted_line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="item_wrapper">
+                  <div class="item_left dot_position">120 Highway 63 West, Burkeville, TX 75932</div>
+                  <div class="item_right dot_position"><a href="#">Show on Map</a></div>
+                  <div class="dotted_line"></div>
+                </div>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col-sm-12">
+                <div class="item_wrapper">
+                  <div class="item_left dot_position">4250 West Beltline Boulevard, Columbia, SC 29201</div>
+                  <div class="item_right dot_position"><a href="#">Show on Map</a></div>
+                  <div class="dotted_line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="item_wrapper">
+                  <div class="item_left dot_position">6319 Saint Andrews Road, Columbia, SC 29212</div>
+                  <div class="item_right dot_position"><a href="#">Show on Map</a></div>
+                  <div class="dotted_line"></div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
         <h3>Property</h3>
         <div class="row" style="padding-top: 10px;">
           <div class="col-sm-6 col-md-12 col-lg-6">
@@ -290,6 +357,6 @@
   </div>
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX4Hv_J3XpP7ELRcOzWIkOb0jmDNL50DA&callback=initMap"></script> 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX4Hv_J3XpP7ELRcOzWIkOb0jmDNL50DA&callback=initMap"></script>
 </body>
 </html>
